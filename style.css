@@ -1,0 +1,47 @@
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2b5876, #4e4376); /* Ambient gradient */
+    font-family: 'Poppins', sans-serif; /* Cool modern font */
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Quote container */
+  .container {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Frosted glass effect */
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* Quote text */
+  .quote {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Author text */
+  .author {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  
