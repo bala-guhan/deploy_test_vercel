@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cool Quote</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="quote">
-        "The only way to do great work is to love what you do."
-      </h1>
-      <p class="author">- Steve Jobs</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Quote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="quote" id="quote">"The only way to do great work is to love what you do."</h1>
+    <p class="author" id="author">- Steve Jobs</p>
+    <div class="buttons">
+      <button class="btn positive" onclick="showPositiveQuote()">Positive</button>
+      <button class="btn negative" onclick="showNegativeQuote()">Negative</button>
     </div>
-  </body>
+  </div>
+
+  <script>
+    function showPositiveQuote() {
+      document.getElementById('quote').textContent = '"Believe you can and you\'re halfway there."';
+      document.getElementById('author').textContent = '- Theodore Roosevelt';
+    }
+
+    function showNegativeQuote() {
+      document.getElementById('quote').textContent = '"Our greatest fear should not be of failure but of succeeding at things in life that don\'t really matter."';
+      document.getElementById('author').textContent = '- Francis Chan';
+    }
+  </script>
+</body>
 </html>
